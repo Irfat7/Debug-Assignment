@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+          <div class="text-zinc-800 font-bold uppercase">
+            <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+            <p class="text-[10px] font-normal capitalize -mt-1">
+              Get ready to Quiz and be amazed!
+            </p>
+          </div>
+          <button class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+            Blog
+          </button>
+        </nav>
+      </header>
+    
+      
+<div class="w-3/4 mx-auto relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Map()
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Filter()
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    ForEach()
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Find()
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td class="px-6 py-4">
+                    It is used to transform each element of an array and create a new array with the transformed values.
+                </td>
+                <td class="px-6 py-4">
+                    It is used to create a new array containing elements that meet a specific condition.
+                </td>
+                <td class="px-6 py-4">
+                    It iterates over each element of an array and performs an action, but it doesn't create a new array.
+                </td>
+                <td class="px-6 py-4">
+                    It returns the first element in the array that meets a specific condition, or undefined if no element matches.
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td class="px-6 py-4">
+                    The callback function should return a transformed value for each element. The resulting array will contain these transformed values.
+                </td>
+                <td class="px-6 py-4">
+                    The callback function should return a Boolean value (true or false). Elements for which the callback returns true will be included in the resulting array.
+                </td>
+                <td class="px-6 py-4">
+                    The callback function is used for performing an action on each element, but it doesn't produce a value or modify the array.
+                </td>
+                <td class="px-6 py-4">
+                    The callback function should return a Boolean value. The first element that satisfies the condition will be returned by the find method.
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td class="px-6 py-4">
+                    Useful when you need to transform each element in an array, such as doubling each number or extracting specific properties.
+                </td>
+                <td class="px-6 py-4">
+                    Ideal when you want to extract elements that match a certain condition, such as getting all even numbers or filtering out null values.
+                </td>
+                <td class="px-6 py-4">
+                    Used for performing an action on each element, like logging values or modifying them in place.
+                </td>
+                <td class="px-6 py-4">
+                    Helpful when you want to find the first element that meets a specific criterion, like finding the first user with a certain role.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="w-3/4 mx-auto mt-6 relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Local Storage
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Session Storage
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Cookies
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td class="px-6 py-4">
+                    Stores data with no expiration time and remains even after the browser is closed.
+                </td>
+                <td class="px-6 py-4">
+                    Stores data for a single browser session. Data is available only within the same session, and it's cleared when the session ends
+                </td>
+                <td class="px-6 py-4">
+                    Can have an expiration time set when they are created. They can be persistent (surviving browser sessions) or session-based (deleted when the browser is closed).
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td class="px-6 py-4">
+                    Less secure
+                </td>
+                <td class="px-6 py-4">
+                    Less secure
+                </td>
+                <td class="px-6 py-4">
+                    More due to httponly attribute
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td class="px-6 py-4">
+                    Useful when storing larger data
+                </td>
+                <td class="px-6 py-4">
+                    Useful when storing large data
+                </td>
+                <td class="px-6 py-4">
+                    Useful when storing small amount of data securely
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
